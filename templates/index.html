@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Prediction</title>
+</head>
+<body>
+    <h2>Enter Patient Data</h2>
+    <form action="/predict" method="post">
+        <input name="Pregnancies" placeholder="Pregnancies"><br>
+        <input name="Glucose" placeholder="Glucose"><br>
+        <input name="BloodPressure" placeholder="Blood Pressure"><br>
+        <input name="SkinThickness" placeholder="Skin Thickness"><br>
+        <input name="Insulin" placeholder="Insulin"><br>
+        <input name="BMI" placeholder="BMI"><br>
+        <input name="DiabetesPedigreeFunction" placeholder="DPF"><br>
+        <input name="Age" placeholder="Age"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction }}</h3>
+</body>
+</html>
